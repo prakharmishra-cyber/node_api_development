@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.get('/', (req, res)=>{
     res.status(200).json({
-        message:'Everything is working perfectly'
+        message:"Welcome to the Person's api"
     });
 });
 
@@ -20,5 +20,5 @@ app.use('/people',  peopleRoutes);
 
 app.listen(PORT, ()=> {
     connection();
-    console.log('We are up and running');
+    console.log('We are up and running\n'.magenta.underline.bold);
 });
